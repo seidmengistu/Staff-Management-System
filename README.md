@@ -1,4 +1,3 @@
-
 ````markdown
 # Staff Management System
 
