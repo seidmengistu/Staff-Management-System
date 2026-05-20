@@ -1,62 +1,92 @@
-# Laundry App - React Native
+# Staff Management System
 
-A clean and modern mobile app UI for a laundry service, built with React Native and Expo.
+A web-based Staff Management System built with PHP for managing staff information, announcements, academic calendars, materials, borrowing records, and role-based user access.
 
-This project is focused on creating a smooth user experience for customers who want to explore laundry services, view service details, and move through the app using a simple mobile-friendly interface. The current version mainly focuses on the UI design, navigation flow, and screen structure.
-
-## About the Project
-
-The idea behind this app is simple: make laundry service booking feel easy, fast, and clear for users.
-
-The app includes a home screen, product/service details screen, cart screen, search screen, and profile screen. It also uses bottom tab navigation to make the main sections easy to access.
-
-This project can be extended into a complete laundry booking app with features like user authentication, order tracking, payment, service scheduling, and API integration.
+This project was designed to support administrative and staff-related workflows in an organized way. It provides separate modules for administrators, staff members, and storekeepers, making it easier to manage daily institutional operations from one system.
 
 ## Features
 
-- Clean React Native mobile UI
-- Expo-based project setup
-- Bottom tab navigation
-- Home screen for laundry services
-- Product/service detail screen
-- Cart screen structure
-- Search and profile screen structure
-- Custom fonts using Expo Font
-- Organized folder structure for screens, components, constants, and navigation
-- Ready to be extended with backend APIs and payment integration
+### Admin Panel
+- Admin dashboard
+- Manage staff members
+- Create and manage academic calendars
+- Publish announcement messages
+- View and update admin profile
 
-## Tech Stack
+### Staff Member Portal
+- Staff dashboard
+- View academic calendar
+- View announcements
+- Access materials information
 
-- React Native
-- Expo
+### Storekeeper Module
+- Storekeeper dashboard
+- Manage materials
+- Track borrowed materials
+- Track returned materials
+- Send and manage messages
+- View academic calendar
+
+### Authentication
+- User login
+- User registration
+- Logout functionality
+- Account management
+- Role-based access structure
+
+## Technologies Used
+
+- PHP
+- HTML
+- CSS
 - JavaScript
-- React Navigation
-- Expo Font
-- Expo Splash Screen
-- Axios
-- Stripe React Native
-- React Native Gesture Handler
-- React Native Screens
+- Bootstrap/Admin template assets
+- MySQL database
 
 ## Project Structure
 
-```bash
-React-Native-Laundary_app-
+```text
+Staff-Management-System/
 │
-├── assets/              # Images, fonts, and static files
-├── components/          # Reusable UI components
-├── constants/           # Colors, sizes, and app constants
-├── navigation/          # Bottom tab navigation
-├── screens/             # Main app screens
-│   ├── Home.jsx
-│   ├── ProductDetails.jsx
-│   ├── Cart.jsx
-│   ├── Search.jsx
-│   └── Profile.jsx
+├── Admin/
+│   ├── AdminDashboard.php
+│   ├── AnnounceMessages/
+│   ├── CreateAcadamicCalander/
+│   ├── ManageStaffMember/
+│   └── Profile/
 │
-├── App.js               # Main app entry file
-├── package.json         # Project dependencies and scripts
-└── app.json             # Expo configuration
+├── StaffMembers/
+│   ├── home1.php
+│   ├── AcademicCalander/
+│   ├── Announcements/
+│   └── MaterialsInformation/
+│
+├── StoreKepper/
+│   ├── home1.php
+│   ├── AcademicCalander/
+│   ├── BorrowMaterials/
+│   ├── Materials/
+│   ├── Message/
+│   └── ReturnedMaterials/
+│
+├── includes/
+│   ├── Auth/
+│   ├── Layout/
+│   ├── css/
+│   ├── js/
+│   ├── images/
+│   ├── plugins/
+│   ├── config.php
+│   ├── homeMiddleware.php
+│   └── notify.php
+│
+├── Auth/
+├── Account.php
+├── index.php
+├── login.php
+├── logout.php
+├── signup.php
+└── load.php
 
 ## Installation and Setup
 
