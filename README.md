@@ -89,7 +89,7 @@ Staff-Management-System/
 ├── signup.php
 └── load.php
 ````
-
+````
 ## Installation and Setup
 
 ### 1. Clone the repository
